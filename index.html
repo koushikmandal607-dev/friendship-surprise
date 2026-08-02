@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Friendship Day, Priyanka! 💫</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #333;
+    }
+    .card {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      max-width: 350px;
+      width: 90%;
+    }
+    h1 { color: #ff4757; font-size: 24px; margin-bottom: 10px; }
+    p { font-size: 16px; color: #555; line-height: 1.5; }
+    .btn {
+      background: #ff4757;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: transform 0.2s, background 0.2s;
+    }
+    .btn:hover { background: #ff6b81; transform: scale(1.05); }
+    .hidden-message { display: none; margin-top: 20px; animation: fadeIn 1s ease-in-out; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Hey Priyanka! ✨</h1>
+    <p>Koushik sent you a special Friendship Day surprise!</p>
+    <button class="btn" onclick="revealSurprise()">Tap to Unlock 🎁</button>
+
+    <div id="surprise" class="hidden-message">
+      <h2>Happy Friendship Day, Cutie! 🎉💛</h2>
+      <p>Thanks for bringing so much energy and fun into my life. Here's to making many more great memories together!</p>
+      <p>— <b>Koushik</b></p>
+    </div>
+  </div>
+
+  <script>
+    function revealSurprise() {
+      document.getElementById('surprise').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
